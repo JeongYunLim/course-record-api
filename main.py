@@ -17,7 +17,7 @@ class Course(BaseModel):
     course_name: str = Field(min_length=1, description="과목명")
     year: str = Field(pattern=r"^\d{4}$", description="4자리 이수연도")
     semester: Literal["1", "2"]
-    grade: Literal["A+", "A0", "B+", "B0", "C+", "C0", "D+", "D0", "F"]
+    grade: Literal["A+", "A0", "B+", "B0", "C+", "C0", "D+", "D0", "F", "P", "NP"]
 
 
 # courses.json 파일에서 전체 수강기록 읽기
